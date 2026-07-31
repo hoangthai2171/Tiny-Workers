@@ -1,0 +1,4 @@
+interface:
+  display_name: "Tiny-Workers"
+  short_description: "Dispatcher for Tiny-Workers skills"
+  default_prompt: "Use $tiny-workers to apply the Tiny-PM workflow."
