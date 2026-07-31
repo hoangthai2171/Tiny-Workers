@@ -1,6 +1,6 @@
 # Tiny-Workers
 
-Tiny-Workers is a personal collection of Codex skills. Each skill lives in its own folder under `skills/` and can be installed independently.
+Tiny-Workers is a personal collection of Codex skills that I use everyday. It focus on simple and straight-to-the-pointtniop work flow that help simplify the control of your Agents when working. It focus on making plans and giving choices for a smoother work.
 
 ## Included skills
 
@@ -31,7 +31,6 @@ Codex normally detects local skill changes automatically. Restart Codex if a new
 
 ## Use
 
-- Invoke Tiny-PM directly with `$tiny-pm`.
 - Invoke the collection dispatcher with `$tiny-workers`; it applies Tiny-PM first and can route to future Tiny-Workers skills.
 
 Use lowercase identifiers exactly as shown. Slash commands do not invoke skills; use the `$` form.
