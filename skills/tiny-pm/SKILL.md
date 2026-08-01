@@ -65,10 +65,10 @@ List every current step/task in this block. Mark each finished step/task with `[
 
 ## Plan Completion Cleanup
 
-When a plan is complete, ask the user whether they want all documentation related to the plan removed. If the completed plan created worktrees or branches, ask at the same time whether they want each plan-created branch merged back into its originating branch and its worktree/branch removed. Present exactly these choices:
+When a plan is complete, ask the user whether they want all documentation and test files related to the plan removed. If the completed plan created worktrees or branches, ask at the same time whether they want each plan-created branch merged back into its originating branch and its worktree/branch removed. Present exactly these choices:
 
 1. Merge and remove only — merge the plan-created branches back into their originating branches, remove those worktrees/branches, and keep the plan documentation.
-2. Remove docs only — remove the plan-related documentation and leave the worktrees/branches unchanged.
+2. Remove docs only — remove the plan-related documentation and test files and leave the worktrees/branches unchanged.
 3. Both — merge/remove the plan-created worktrees/branches and remove the plan-related documentation.
 
 The user may reply with a number or state a custom choice. Do not merge, remove, or delete anything until the user explicitly confirms a choice. If no plan-created worktrees or branches exist, ask only the documentation-cleanup question.
