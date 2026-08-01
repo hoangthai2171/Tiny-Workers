@@ -7,7 +7,10 @@
   "bin": { "tiny-workers": "./bin/tiny-workers.mjs" },
   "files": ["bin", "src", "skills", "README.md", "LICENSE", "package.json"],
   "scripts": { "test": "node --test", "pack:check": "npm pack --dry-run" },
-  "publishConfig": { "registry": "https://npm.pkg.github.com" },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org",
+    "access": "public"
+  },
   "repository": { "type": "git", "url": "git+https://github.com/hoangthai2171/Tiny-Workers.git" },
   "license": "MIT"
 }
