@@ -1,14 +1,26 @@
-# Tiny-Workers
+<p align="center">
+  <img src="./assets/tiny-workers-command-center.svg" alt="Tiny-Workers command center banner">
+</p>
 
-A collection of work flow skills the help keeping your Agents in check. Making your Agent a real project's butler.
+<h1 align="center">Tiny-Workers</h1>
+
+<p align="center">A collection of workflow skills that keep AI agents focused, orderly, and on track.</p>
+
+<p align="center">
+  <a href="https://www.npmjs.com/package/@hoangthai2171/tiny-workers">
+    <img src="https://img.shields.io/npm/v/%40hoangthai2171%2Ftiny-workers?logo=npm&label=npm" alt="npm version">
+  </a>
+</p>
+
+Tiny-Workers gives AI agents a practical workflow for staying focused and keeping project work orderly.
 
 ## Supported agents
 
-Codex, Claude Code, Antigravity, OpenCode, and Hermes Agent.
+Tiny-Workers supports Codex, Claude Code, Antigravity, OpenCode, and Hermes Agent.
 
 ## Install
 
-You do not need to clone this repository. Tiny-Workers is a public package on npmjs.org, so no registry configuration or login is needed for installation:
+You do not need to clone this repository. Tiny-Workers is a public package on npmjs.org, so no registry configuration or login is needed:
 
 ```sh
 npx @hoangthai2171/tiny-workers
@@ -22,7 +34,18 @@ Select one or more numbered agents, for example `1,3,5`. The installer places `t
 $tiny-workers
 ```
 
-Simply call this at the start of the session and you're good to go.
+Call this at the start of a session to apply the Tiny-Workers workflow.
+
+## Tiny-PM workflow criteria
+
+Tiny-PM's practical value is a focused, reviewable workflow that:
+
+- Defines a clear, observable goal before work begins
+- Keeps changes focused, surgical, and easy to review
+- Makes assumptions, trade-offs, and uncertainty visible
+- Uses explicit approval boundaries for risky or high-impact work
+- Tracks multi-step work with milestone checkpoints
+- Verifies the requested outcome before claiming completion
 
 ## Update
 
@@ -39,3 +62,7 @@ npx @hoangthai2171/tiny-workers uninstall
 ```
 
 After confirmation, this removes only the selected agents' `tiny-pm/` and `tiny-workers/` folders.
+
+## License
+
+MIT © 2026 Hoang Thai. See [LICENSE](./LICENSE).
