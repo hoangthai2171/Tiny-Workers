@@ -50,9 +50,28 @@ After completing the current task or milestone and its proportionate verificatio
 
 Do not silently continue to the next milestone.
 
+## Plan Status Tracking
+
+For every plan with multiple steps or tasks, put a status block at the start of the plan document, immediately after its title and any required metadata, before the goal or detailed plan:
+
+```markdown
+**Status:** In progress
+
+- [ ] Step 1: ...
+- [x] Step 2: ...
+```
+
+List every current step/task in this block. Mark each finished step/task with `[x]` as soon as it is completed, keep unfinished work as `[ ]`, and update the status summary as work progresses. Treat this block as the source of truth for current plan progress.
+
 ## Plan Completion Cleanup
 
-When a plan is complete, ask the user whether they want all documentation related to the plan removed. Do not remove any plan-related documentation unless the user explicitly confirms.
+When a plan is complete, ask the user whether they want all documentation related to the plan removed. If the completed plan created worktrees or branches, ask at the same time whether they want each plan-created branch merged back into its originating branch and its worktree/branch removed. Present exactly these choices:
+
+1. Merge and remove only — merge the plan-created branches back into their originating branches, remove those worktrees/branches, and keep the plan documentation.
+2. Remove docs only — remove the plan-related documentation and leave the worktrees/branches unchanged.
+3. Both — merge/remove the plan-created worktrees/branches and remove the plan-related documentation.
+
+The user may reply with a number or state a custom choice. Do not merge, remove, or delete anything until the user explicitly confirms a choice. If no plan-created worktrees or branches exist, ask only the documentation-cleanup question.
 
 ## Think Before Coding
 
