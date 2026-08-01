@@ -6,7 +6,7 @@
 
 - [x] Task 1: Create the local command-center SVG banner
 - [x] Task 2: Redesign README content and presentation
-- [ ] Task 3: Include the banner asset in the npm package
+- [x] Task 3: Include the banner asset in the npm package
 - [ ] Task 4: Run final documentation and package verification
 
 **Goal:** Make the README polished and memorable for GitHub and npm visitors while explaining Tiny-Workers’ orderly AI-agent workflow.
