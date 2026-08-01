@@ -33,7 +33,7 @@
   <text x="140" y="61" fill="#bcefff" font-family="sans-serif" font-size="14" font-weight="700" letter-spacing="3">LOCAL AGENT OPERATIONS // ONLINE</text>
 
   <text x="60" y="135" fill="#ffffff" font-family="sans-serif" font-size="42" font-weight="800" letter-spacing="5">TINY-WORKERS</text>
-  <text x="62" y="161" fill="#86a6c8" font-family="sans-serif" font-size="14" letter-spacing="1.5">ORDERLY AI-AGENT WORK, ONE SMALL STEP AT A TIME</text>
+  <text x="62" y="150" fill="#86a6c8" font-family="sans-serif" font-size="14" letter-spacing="1.5">ORDERLY AI-AGENT WORK, ONE SMALL STEP AT A TIME</text>
 
   <g>
     <rect x="60" y="198" width="310" height="108" rx="16" fill="url(#panel)" stroke="#46e8ff" stroke-opacity="0.65" stroke-width="2"/>
