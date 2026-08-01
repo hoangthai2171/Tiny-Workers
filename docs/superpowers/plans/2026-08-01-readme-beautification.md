@@ -5,7 +5,7 @@
 **Status:** In progress
 
 - [x] Task 1: Create the local command-center SVG banner
-- [ ] Task 2: Redesign README content and presentation
+- [x] Task 2: Redesign README content and presentation
 - [ ] Task 3: Include the banner asset in the npm package
 - [ ] Task 4: Run final documentation and package verification
 
