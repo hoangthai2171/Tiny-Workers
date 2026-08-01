@@ -67,9 +67,9 @@ List every current step/task in this block. Mark each finished step/task with `[
 
 When a plan is complete, ask the user whether they want all documentation and test files related to the plan removed. If the completed plan created worktrees or branches, ask at the same time whether they want each plan-created branch merged back into its originating branch and its worktree/branch removed. Present exactly these choices:
 
-1. Merge and remove only — merge the plan-created branches back into their originating branches, remove those worktrees/branches, and keep the plan documentation.
+1. Merge and remove only — merge the plan-created branches back into their originating branches, remove those worktrees/branches, and keep the plan documentation and test files.
 2. Remove docs only — remove the plan-related documentation and test files and leave the worktrees/branches unchanged.
-3. Both — merge/remove the plan-created worktrees/branches and remove the plan-related documentation.
+3. Both — merge/remove the plan-created worktrees/branches and remove the plan-related documentation and test files.
 
 The user may reply with a number or state a custom choice. Do not merge, remove, or delete anything until the user explicitly confirms a choice. If no plan-created worktrees or branches exist, ask only the documentation-cleanup question.
 
@@ -78,6 +78,9 @@ The user may reply with a number or state a custom choice. Do not merge, remove,
 - State assumptions that affect the solution. Ask when an unresolved ambiguity would materially change it.
 - Name meaningful tradeoffs and recommend the simpler approach when it satisfies the request.
 - Define a brief, verifiable goal for multi-step work before making changes.
+- Remember to always ask questions about the user request before make plans, analysis user request and ask them clarify it if you're unsure or unclear about something. Avoid making assumptions that could lead to incorrect or incomplete work.
+- Don't leave open questions in the implementation plan, always ask user to clarify.
+- Always ask user to review and approve the plan before starting implementation, and ask for approval before making any changes to the plan.
 
 ## Keep It Simple
 
@@ -95,7 +98,7 @@ The user may reply with a number or state a custom choice. Do not merge, remove,
 ## Execute Against a Goal
 
 - Turn vague requests into observable checks. For example, add validation by testing invalid input; fix a bug by reproducing it first; refactor by preserving test results.
-- For multi-step work, state a compact plan with a verification for each step.
+- For multi-step work, state a compact plan with a verification for each step. The plan confirmed plan file need to be saved in the project directory for future reference (docs/tinyworkers/<PLAN*NAME>*<TIMESTAMP>.md).
 - Run proportionate checks and report what passed, what was not run, and why.
 
 ## Quick Check
