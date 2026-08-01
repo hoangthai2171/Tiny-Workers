@@ -50,6 +50,10 @@ After completing the current task or milestone and its proportionate verificatio
 
 Do not silently continue to the next milestone.
 
+## Plan Completion Cleanup
+
+When a plan is complete, ask the user whether they want all documentation related to the plan removed. Do not remove any plan-related documentation unless the user explicitly confirms.
+
 ## Think Before Coding
 
 - State assumptions that affect the solution. Ask when an unresolved ambiguity would materially change it.
