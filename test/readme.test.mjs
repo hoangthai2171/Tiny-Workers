@@ -1,0 +1,12 @@
+import assert from 'node:assert/strict';
+import { readFile } from 'node:fs/promises';
+import test from 'node:test';
+
+test('README documents GitHub Packages setup and all installer operations', async () => {
+  const readme = await readFile('README.md', 'utf8');
+  assert.match(readme, /@hoangthai2171:registry\s+https:\/\/npm\.pkg\.github\.com/);
+  assert.match(readme, /npx @hoangthai2171\/tiny-workers/);
+  assert.match(readme, /tiny-workers update/);
+  assert.match(readme, /tiny-workers uninstall/);
+  assert.match(readme, /do not need to clone/i);
+});
