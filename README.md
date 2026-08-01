@@ -18,13 +18,11 @@ Select one or more numbered agents, for example `1,3,5`. The installer places `t
 
 ## Usage
 
-Simply call
-
 ```sh
 $tiny-workers
 ```
 
-at the start of the session and you're good to go.
+Simply call this at the start of the session and you're good to go.
 
 ## Update
 
