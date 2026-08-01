@@ -1,6 +1,6 @@
 # Tiny-Workers
 
-Tiny-Workers provides Tiny-PM and its `$tiny-workers` dispatcher as portable Agent Skills.
+A collection of work flow skills the help keeping your Agents in check. Making your Agent a real project's butler.
 
 ## Supported agents
 
@@ -14,13 +14,17 @@ You do not need to clone this repository. Tiny-Workers is a public package on np
 npx @hoangthai2171/tiny-workers
 ```
 
-If you previously configured this scope for GitHub Packages, point the old mapping at npmjs.org:
+Select one or more numbered agents, for example `1,3,5`. The installer places `tiny-pm/` and `tiny-workers/` directly in each selected agent's global skills directory.
+
+## Usage
+
+Simply call
 
 ```sh
-npm config set @hoangthai2171:registry https://registry.npmjs.org/ --location=user
+$tiny-workers
 ```
 
-Select one or more numbered agents, for example `1,3,5`. The installer places `tiny-pm/` and `tiny-workers/` directly in each selected agent's global skills directory.
+at the start of the session and you're good to go.
 
 ## Update
 
@@ -37,7 +41,3 @@ npx @hoangthai2171/tiny-workers uninstall
 ```
 
 After confirmation, this removes only the selected agents' `tiny-pm/` and `tiny-workers/` folders.
-
-## Publishing
-
-The release workflow publishes to npmjs.org. Configure a repository secret named `NPM_TOKEN` with permission to publish this package before publishing a GitHub Release.
