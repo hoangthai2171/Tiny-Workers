@@ -9,4 +9,8 @@ test('README documents GitHub Packages setup and all installer operations', asyn
   assert.match(readme, /tiny-workers update/);
   assert.match(readme, /tiny-workers uninstall/);
   assert.match(readme, /do not need to clone/i);
+  for (const agent of ['Codex', 'Claude Code', 'Antigravity', 'OpenCode', 'Hermes Agent']) {
+    assert.match(readme, new RegExp(`\\b${agent}\\b`));
+  }
+  assert.match(readme, /`tiny-pm\/` and `tiny-workers\/` directly/);
 });

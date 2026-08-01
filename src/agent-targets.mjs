@@ -2,9 +2,13 @@ import path from 'node:path';
 
 export function resolveAgentTargets({ home, platform, env }) {
   const pathApi = platform === 'win32' ? path.win32 : path.posix;
-  const configHome = platform === 'win32'
-    ? env.APPDATA || pathApi.join(home, 'AppData', 'Roaming')
-    : env.XDG_CONFIG_HOME || pathApi.join(home, '.config');
+  const configuredHome = platform === 'win32' ? env.APPDATA : env.XDG_CONFIG_HOME;
+  const fallbackConfigHome = platform === 'win32'
+    ? pathApi.join(home, 'AppData', 'Roaming')
+    : pathApi.join(home, '.config');
+  const configHome = typeof configuredHome === 'string' && pathApi.isAbsolute(configuredHome)
+    ? configuredHome
+    : fallbackConfigHome;
   const definitions = [
     ['codex', 'Codex', 'codex', pathApi.join(home, '.codex')],
     ['claude-code', 'Claude Code', 'claude', pathApi.join(home, '.claude')],

@@ -34,6 +34,32 @@ test('uses APPDATA for the Windows OpenCode skills directory', () => {
   );
 });
 
+test('ignores a relative XDG_CONFIG_HOME on POSIX', () => {
+  const targets = resolveAgentTargets({
+    home: '/home/alex',
+    platform: 'linux',
+    env: { XDG_CONFIG_HOME: 'relative/config' },
+  });
+
+  assert.equal(
+    targets.find((target) => target.id === 'opencode').skillsDirectory,
+    '/home/alex/.config/opencode/skills',
+  );
+});
+
+test('ignores a drive-relative APPDATA on Windows', () => {
+  const targets = resolveAgentTargets({
+    home: 'C:\\Users\\Alex',
+    platform: 'win32',
+    env: { APPDATA: 'C:AppData\\Roaming' },
+  });
+
+  assert.equal(
+    targets.find((target) => target.id === 'opencode').skillsDirectory,
+    'C:\\Users\\Alex\\AppData\\Roaming\\opencode\\skills',
+  );
+});
+
 test('detects an agent from either its config root or executable', async () => {
   const targets = [{ id: 'codex', configRoot: '/home/alex/.codex', command: 'codex' }];
 
