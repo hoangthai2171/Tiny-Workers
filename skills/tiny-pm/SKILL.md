@@ -1,6 +1,8 @@
 ---
 name: tiny-pm
 description: Use when writing, reviewing, or refactoring code; planning or executing implementation work; or deciding which development tasks can proceed without approval.
+author: https://github.com/hoangthai2171/Tiny-Workers
+version: 0.1.4
 ---
 
 # Tiny-PM
@@ -75,11 +77,15 @@ The user may reply with a number or state a custom choice. Do not merge, remove,
 
 ## Think Before Coding
 
+- Before making a plan, inspect the request beyond its literal wording. A short or simple-sounding request may hide an outcome the user has not fully defined.
+- Check whether the desired outcome, problem, scope or target, audience, constraints, existing context, acceptance criteria, and risk or impact are clear enough to guide the work.
+- If a missing answer could materially change the work or its success, ask the user a focused clarification question before planning. Do not decide the user's hidden intent on their behalf.
+- Ask a small, prioritized set of concrete questions; skip questions whose answers would not change the plan or result. Treat phrases such as “make it better,” “do the obvious thing,” or “you know what I mean” as signals to clarify material ambiguity, not permission to invent it.
+- When the request is sufficiently clear and low risk, state assumptions briefly and proceed without demanding decorative detail. After material ambiguity is resolved, restate the goal and constraints, then present the plan for approval.
 - State assumptions that affect the solution. Ask when an unresolved ambiguity would materially change it.
 - Name meaningful tradeoffs and recommend the simpler approach when it satisfies the request.
 - Define a brief, verifiable goal for multi-step work before making changes.
-- Remember to always ask questions about the user request before make plans, analysis user request and ask them clarify it if you're unsure or unclear about something. Avoid making assumptions that could lead to incorrect or incomplete work.
-- Don't leave open questions in the implementation plan, always ask user to clarify.
+- Resolve open questions before writing the implementation plan; do not leave material ambiguity inside the plan.
 - Always ask user to review and approve the plan before starting implementation, and ask for approval before making any changes to the plan.
 
 ## Keep It Simple
