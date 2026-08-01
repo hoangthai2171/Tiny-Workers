@@ -1,0 +1,13 @@
+{
+  "name": "@hoangthai2171/tiny-workers",
+  "version": "0.1.0",
+  "description": "Interactive installer for Tiny-Workers agent skills.",
+  "type": "module",
+  "engines": { "node": ">=20" },
+  "bin": { "tiny-workers": "./bin/tiny-workers.mjs" },
+  "files": ["bin", "src", "skills", "README.md", "LICENSE", "package.json"],
+  "scripts": { "test": "node --test", "pack:check": "npm pack --dry-run" },
+  "publishConfig": { "registry": "https://npm.pkg.github.com" },
+  "repository": { "type": "git", "url": "git+https://github.com/hoangthai2171/Tiny-Workers.git" },
+  "license": "MIT"
+}
