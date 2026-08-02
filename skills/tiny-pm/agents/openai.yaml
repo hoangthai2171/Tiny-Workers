@@ -1,4 +1,4 @@
 interface:
   display_name: "Tiny-PM"
-  short_description: "Coding workflows and approval choices"
-  default_prompt: "Use $tiny-pm to manage this change with clear approvals and execution choices."
+  short_description: "Project planning, approvals, and delivery"
+  default_prompt: "Use $tiny-pm to manage this project from intake through verified handoff."

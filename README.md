@@ -12,7 +12,20 @@
   </a>
 </p>
 
-Tiny-Workers gives AI agents a practical workflow for staying focused and keeping project work orderly.
+Tiny-Workers gives AI agents a practical workflow for staying focused and keeping project work orderly. It was designed to make AI-agent development predictable: clarify first, plan explicitly, execute narrowly, verify honestly, and keep the user in control of material decisions.
+
+## Workflow
+
+Tiny-Workers separates project control from planning and implementation:
+
+- **Tiny-PM** manages scope, approvals, risk, milestones, and handoff.
+- **Tiny-Planner** investigates the repository and writes an approval-ready implementation plan.
+- **Tiny-Executor** executes an approved plan, verifies each milestone, and records evidence.
+- **Tiny-Workers** dispatches the correct phase in that order.
+
+The normal lifecycle is:
+
+`Tiny-Workers → Tiny-PM → Tiny-Planner → approval → Tiny-Executor → verified handoff`
 
 ## Supported agents
 
@@ -26,7 +39,7 @@ You do not need to clone this repository. Tiny-Workers is a public package on np
 npx @hoangthai2171/tiny-workers
 ```
 
-Select one or more numbered agents, for example `1,3,5`. The installer places `tiny-pm/` and `tiny-workers/` directly in each selected agent's global skills directory.
+Select one or more numbered agents, for example `1,3,5`. The installer places `tiny-pm/`, `tiny-planner/`, `tiny-executor/`, and `tiny-workers/` directly in each selected agent's global skills directory.
 
 ## Usage
 
@@ -61,7 +74,7 @@ The command displays detected agents and asks before replacing either existing T
 npx @hoangthai2171/tiny-workers uninstall
 ```
 
-After confirmation, this removes only the selected agents' `tiny-pm/` and `tiny-workers/` folders.
+After confirmation, this removes only the selected agents' `tiny-pm/`, `tiny-planner/`, `tiny-executor/`, and `tiny-workers/` folders.
 
 ## License
 

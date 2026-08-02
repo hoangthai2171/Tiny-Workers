@@ -1,0 +1,4 @@
+interface:
+  display_name: "Tiny-Planner"
+  short_description: "Evidence-based implementation plans"
+  default_prompt: "Use $tiny-planner to draft an approval-ready implementation plan."

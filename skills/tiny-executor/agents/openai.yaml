@@ -1,0 +1,4 @@
+interface:
+  display_name: "Tiny-Executor"
+  short_description: "Execute approved implementation plans"
+  default_prompt: "Use $tiny-executor to execute the approved implementation plan step by step."

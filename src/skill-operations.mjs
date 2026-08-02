@@ -1,7 +1,7 @@
 import { access, cp, mkdir, mkdtemp, rename, rm, stat } from 'node:fs/promises';
 import path from 'node:path';
 
-const SKILL_NAMES = ['tiny-pm', 'tiny-workers'];
+const SKILL_NAMES = ['tiny-pm', 'tiny-planner', 'tiny-executor', 'tiny-workers'];
 const DEFAULT_FILE_SYSTEM = { access, cp, mkdir, mkdtemp, rename, rm, stat };
 
 async function exists(filePath, fileSystem) {
