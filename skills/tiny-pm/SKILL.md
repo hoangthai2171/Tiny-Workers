@@ -133,9 +133,9 @@ For each milestone:
 3. Run its planned verification.
 4. Update the plan status and actual evidence immediately.
 5. Stop and report:
-   - what was completed and the evidence;
-   - the next planned task;
-   - whether approval is needed to continue.
+    - what was completed and the evidence;
+    - the next planned task;
+    - whether approval is needed to continue.
 
 If verification fails, classify the failure as implementation-caused, pre-existing, unrelated, or blocked. Repair within scope when safe. Otherwise stop, record evidence, and request a decision.
 
