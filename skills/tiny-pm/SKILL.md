@@ -44,13 +44,13 @@ Explain the proposed task, affected scope, and meaningful risks; then request ex
 
 ## Milestone Checkpoint
 
-After completing the current task or milestone and its proportionate verification, stop. Briefly state:
+By default, each explicitly numbered plan step is a milestone. After completing and verifying it, stop and report these information:
 
 1. What was completed and the verification evidence.
 2. The next planned task.
 3. A request for approval to begin it.
 
-Do not silently continue to the next milestone.
+Do not silently continue to the next milestone. Start-of-work authorization applies only to the current milestone and does not automatically authorize later milestones. Unless the user explicitly approves, do not continue to the next milestone. If the next milestone is low-risk and routine, ask whether to continue without further approval.
 
 ## Plan Status Tracking
 
@@ -63,7 +63,7 @@ For every plan with multiple steps or tasks, put a status block at the start of 
 - [x] Step 2: ...
 ```
 
-List every current step/task in this block. Mark each finished step/task with `[x]` as soon as it is completed, keep unfinished work as `[ ]`, and update the status summary as work progresses. Treat this block as the source of truth for current plan progress.
+List every current step/task in this block. After each step’s implementation and step-specific verification pass, immediately update the plan document and status tracker before starting the next step. Never defer completed-step updates until the entire plan is finished. Keep unfinished work as `[ ]`, and update the status summary as work progresses. Treat this block as the source of truth for current plan progress.
 
 ## Plan Completion Cleanup
 
