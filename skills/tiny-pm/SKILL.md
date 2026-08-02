@@ -62,6 +62,16 @@ For every multi-step plan, the status block immediately after the title and meta
 
 Each numbered step is a milestone by default. Update its checkbox and the plan status immediately after its verification pass, before starting another step.
 
+## Native Codex task-plan panel
+
+When running in Codex and the native `update_plan` tool is available, mirror every formal plan's numbered milestones in the task plan/progress panel when execution begins. The panel is a live UI projection; the project plan remains the durable source of truth.
+
+- Initialize the panel before Tiny-Executor edits files, with one concise item per numbered plan step in the same order.
+- Map `Pending` to `pending`, `In progress` to `in_progress`, and `Complete` or an explicitly accepted `Skipped` step to `completed`.
+- After each verification pass, synchronize the panel before the next milestone starts. Synchronize it again for a blocked or failed checkpoint, final handoff, and completion.
+- Never mark a blocked or failed step `completed`; keep its native item `in_progress` and put the actual blocker or failure in the plan and checkpoint evidence because the native tool has no blocked status.
+- Tiny-PM owns panel initialization and the final state. Tiny-Executor owns updates while the plan is executing. Do not claim the panel is current unless the `update_plan` call succeeds.
+
 ## Start-of-work authorization
 
 At the start of each work session or new plan, ask once:

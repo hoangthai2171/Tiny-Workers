@@ -32,6 +32,12 @@ Inspect the working tree, relevant files, local instructions, and plan status. R
 
 Run a focused baseline check when practical. Record pre-existing failures so they are not later attributed to the implementation.
 
+### 1a. Initialize the native Codex task-plan panel
+
+When running in Codex and the native `update_plan` tool is available, call it before the first file edit for every approved or in-progress multi-step plan. Send one concise item for each numbered plan step, in order, with completed steps as `completed`, the next step as `in_progress`, and later steps as `pending`. This call is what makes the native task plan/progress panel visible; a Markdown checklist or prose status does not replace it.
+
+Keep the panel synchronized after every verification pass and before the next milestone begins. If a step is blocked or fails, do not mark it `completed`; keep its item `in_progress`, record the actual condition in the canonical plan and checkpoint, and include it in the `update_plan` explanation when useful. At final completion, call `update_plan` with every completed step. If the tool is unavailable, continue using the canonical plan and report that the native panel could not be updated.
+
 ### 2. Select the next milestone
 
 Choose the first incomplete step in the plan's status block. Mark it `In progress` and keep the plan status `In progress`. Do not start later steps early unless the plan explicitly allows it.
