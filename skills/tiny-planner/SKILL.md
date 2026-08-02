@@ -52,7 +52,7 @@ Do not leave material `TBD`, `TODO`, unresolved alternatives, or vague instructi
 
 ### 4. Write the plan
 
-Save the plan in the project under `docs/tinyworkers/<PLAN_NAME>_<TIMESTAMP>.md`, unless the project explicitly defines another location. Use the template below. Keep the status block immediately after the title and metadata; it is the progress source of truth.
+Save the plan in the project under `docs/tinyworkers/<TIMESTAMP>_<PLAN_NAME>.md`, unless the project explicitly defines another location. Use the template below. Keep the status block immediately after the title and metadata; it is the progress source of truth.
 
 Each numbered implementation step is a milestone. Make steps ordered, independently understandable, and small enough to verify before continuing. Each step must name its files, exact behavior, dependencies, exit criteria, and verification.
 
@@ -121,9 +121,9 @@ Set the plan status to `Awaiting approval`, summarize the important decisions, r
 
 ## Findings and Decisions
 
-| Decision | Alternatives considered | Chosen approach | Reason | Consequence |
-|---|---|---|---|---|
-| <decision> | <alternatives> | <choice> | <reason> | <impact> |
+| Decision   | Alternatives considered | Chosen approach | Reason   | Consequence |
+| ---------- | ----------------------- | --------------- | -------- | ----------- |
+| <decision> | <alternatives>          | <choice>        | <reason> | <impact>    |
 
 ## Assumptions, Constraints, and Dependencies
 
@@ -134,9 +134,9 @@ Set the plan status to `Awaiting approval`, summarize the important decisions, r
 
 ## Risks and Rollback
 
-| Risk | Impact | Mitigation | Rollback or recovery |
-|---|---|---|---|
-| <risk> | <impact> | <mitigation> | <recovery> |
+| Risk   | Impact   | Mitigation   | Rollback or recovery |
+| ------ | -------- | ------------ | -------------------- |
+| <risk> | <impact> | <mitigation> | <recovery>           |
 
 ## File Impact and Detailed Changes
 
@@ -162,16 +162,16 @@ Set the plan status to `Awaiting approval`, summarize the important decisions, r
 
 ## Verification Plan
 
-| Acceptance criterion | Check type | Command or action | Expected evidence |
-|---|---|---|---|
-| <criterion> | Unit/integration/manual/static | `<command>` | <result> |
+| Acceptance criterion | Check type                     | Command or action | Expected evidence |
+| -------------------- | ------------------------------ | ----------------- | ----------------- |
+| <criterion>          | Unit/integration/manual/static | `<command>`       | <result>          |
 
 ## Completed Verification
 
 > Update this section during execution with actual results. Do not prefill claims.
 
 | Step or check | Command or action | Result | Evidence | Timestamp |
-|---|---|---|---|---|
+| ------------- | ----------------- | ------ | -------- | --------- |
 
 ## Deviations and Plan Updates
 
